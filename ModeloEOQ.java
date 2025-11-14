@@ -137,5 +137,9 @@ public class ModeloEOQ {
         System.out.println("Programa finalizado");
 
     }
+    public static double cantidadPedido(double D, double S, double H){
+        return Math.sqrt((2*D*S)/H);
+    }
+    
 
 }
