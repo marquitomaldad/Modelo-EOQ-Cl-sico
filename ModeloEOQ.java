@@ -19,20 +19,37 @@ public class ModeloEOQ {
 
                 System.out.println("Modelo EOQ Clásico");
 
-                System.out.println("Demanda Anual (D)");
+                System.out.println("Demanda Anual (D): ");
+                D = lector.nextDouble();
+
+                System.out.println("Costo de Pedido (S): ");
+                S = lector.nextDouble();
+
+                System.out.println("Costo de Mantenimiento (H): ");
+                H = lector.nextDouble();
+
+                double eoq = cantidadPedido(D, S, H);
+
+                System.out.println("El EOQ es: " + eoq);
+                System.out.println();
+            }
+            
+            if(opcion == 2){
+
+                double D,S;
+
+                System.out.println("Modelo EOQ con descuento");
+
+                System.out.println("Demanda anual (D)");
                 D = lector.nextDouble();
 
                 System.out.println("Costo de Pedido (S)");
                 S = lector.nextDouble();
 
-                System.out.println("Costo de Mantenimiento (H)");
-                H = lector.nextDouble();
 
-                double eoq = Math.sqrt((2 * D * S) / H);
 
-                System.out.println("El EOQ es: " + eoq);
-                System.out.println();
             }
+
 
         } while (opcion !=3);
 
