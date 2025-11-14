@@ -46,6 +46,28 @@ public class ModeloEOQ {
                 System.out.println("Costo de Pedido (S)");
                 S = lector.nextDouble();
 
+                System.out.println("-Precio 1-");
+                System.out.println("Costo Unitario 1: ")
+                double p1 = lector.nextDouble();
+
+                double q1 = cantidadPedido(D,S h1);
+                double to1 = duracionCiclo(q1, D);
+                double n1 = N(to1, 1);
+                double le1 = Le(1, n1, to1);
+                double pr1 = puntoReorden(le1, D);
+
+                double costoTotal1= (D/q1) * S + (q1/2) * h1 + D * p1;
+                
+                System.out.println("Costo Unitario 1: "+p1);
+                System.out.println("Costo de Almacenamiento: + h1");
+                System.out.println("Cantidad optima del pedido: " + (int)q1);
+                System.out.println("Duración del ciclo:" + to1);
+                System.out.println("N:" + n1);
+                System.out.println("Le: "+ le1);
+                System.out.println("Punto de Reorden:"+pr1);
+                System.out.println("Costo total unitario:"+costoTotal1);
+                System.out.println();
+
 
 
             }
