@@ -152,6 +152,9 @@ public class ModeloEOQ {
     public static double Le(double l, double N, double to){
         return l - N * to;
     }
+    public static double puntoReorden(double le, double D){
+        return le * D;
+    }
 
 
 }
