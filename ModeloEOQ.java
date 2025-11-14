@@ -129,12 +129,12 @@ public class ModeloEOQ {
 
                 System.out.println();
 
-
-
             }
 
 
         } while (opcion !=3);
+
+        System.out.println("Programa finalizado");
 
     }
 
