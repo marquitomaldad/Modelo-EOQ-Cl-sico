@@ -118,21 +118,16 @@ public class ModeloEOQ {
                 System.out.println("Costo total unitario: "+costoTotal3);
                 System.out.println();
 
-                
+                System.out.println("-Mejor opción-");
+                if(costoTotal1 < costoTotal2 && costoTotal1 < costoTotal3){
+                    System.out.println("Mejor Precio 1");
+                }else if (costoTotal2<costoTotal1 && costoTotal2<costoTotal3){
+                    System.out.println("Mejor Precio 2");
+                }else{
+                    System.out.println("Mejor Precio 3");
+                }
 
-            
-
-
-
-
-                
-
-    
-
-                
-
-
-
+                System.out.println();
 
 
 
