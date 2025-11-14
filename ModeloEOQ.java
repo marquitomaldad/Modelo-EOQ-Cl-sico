@@ -140,6 +140,11 @@ public class ModeloEOQ {
     public static double cantidadPedido(double D, double S, double H){
         return Math.sqrt((2*D*S)/H);
     }
+
+    public static double duracionCiclo(double Q, double D){
+        return Q/D;
+    }
     
+
 
 }
