@@ -47,10 +47,13 @@ public class ModeloEOQ {
                 S = lector.nextDouble();
 
                 System.out.println("-Precio 1-");
-                System.out.println("Costo Unitario 1: ")
+                System.out.println("Costo Unitario 1: ");
                 double p1 = lector.nextDouble();
 
-                double q1 = cantidadPedido(D,S h1);
+                System.out.println("Costo de almacenamiento 1: ");
+                double h1 = lector.nextDouble();
+
+                double q1 = cantidadPedido(D,S, h1);
                 double to1 = duracionCiclo(q1, D);
                 double n1 = N(to1, 1);
                 double le1 = Le(1, n1, to1);
@@ -73,7 +76,7 @@ public class ModeloEOQ {
                 double p2 = lector.nextDouble();
 
                 System.out.println("Costo de almacenamiento 2: ");
-                double h2 = lecto.nextDouble();
+                double h2 = lector.nextDouble();
 
                 double q2 = cantidadPedido(D,S, h2);
                 double to2 = duracionCiclo(q1, D);
