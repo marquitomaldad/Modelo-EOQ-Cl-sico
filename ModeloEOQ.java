@@ -145,6 +145,9 @@ public class ModeloEOQ {
         return Q/D;
     }
     
+    public static double N(double to, double l){
+        return l/to;
+    }
 
 
 }
